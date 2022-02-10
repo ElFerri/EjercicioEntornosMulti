@@ -17,22 +17,22 @@ import org.junit.Ignore;
  * @author fersan
  */
 public class EjercicioEntornosMultiTest {
-    
+
     public EjercicioEntornosMultiTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -64,19 +64,17 @@ public class EjercicioEntornosMultiTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-        /**
+
+    /**
      * Test of multiplica method, of class EjercicioEntornosMulti.
+     * Multiplicacion por 15000, el timeout te dira si es capaz de hacerlo en 1 ms.
      */
-    @Test(timeout=1)
+    @Test(timeout = 1)
     public void testMultiplicaTimeout() {
         System.out.println("multiplica");
         int a = 15000;
         int b = 15000;
-        int expResult = 0;
         int result = EjercicioEntornosMulti.multiplica(a, b);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
     }
-    
+
 }
