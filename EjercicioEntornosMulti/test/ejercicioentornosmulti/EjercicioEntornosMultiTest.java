@@ -64,5 +64,19 @@ public class EjercicioEntornosMultiTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
+        /**
+     * Test of multiplica method, of class EjercicioEntornosMulti.
+     */
+    @Test(timeout=1)
+    public void testMultiplicaTimeout() {
+        System.out.println("multiplica");
+        int a = 15000;
+        int b = 15000;
+        int expResult = 0;
+        int result = EjercicioEntornosMulti.multiplica(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
     
 }
