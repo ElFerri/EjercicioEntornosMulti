@@ -21,9 +21,22 @@ public class EjercicioEntornosMulti {
         return a*b;
     
 }
+    
      /**
      * Método main
      * @param args Argumentos linia de comandos
+     */
+    public static int factorial(int numero) {
+        int factorial = numero;
+        for(int i =(numero - 1); i > 1; i--) {
+            factorial = factorial * 1;
+        }
+            return factorial;    
+    }
+    
+    /**
+     * Método factorial
+     * @param args Argumento linia de comandos 
      */
     public static void main(String[] args) {
         // TODO code application logic here
