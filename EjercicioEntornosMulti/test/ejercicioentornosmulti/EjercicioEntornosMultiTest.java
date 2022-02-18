@@ -77,4 +77,28 @@ public class EjercicioEntornosMultiTest {
         int result = EjercicioEntornosMulti.multiplica(a, b);
     }
 
+    /**
+     * Test of factorial method, of class EjercicioEntornosMulti.
+     */
+    @Test
+    public void testFactorial() {
+        System.out.println("factorial");
+        int numero = 0;
+        int expResult = 0;
+        int result = EjercicioEntornosMulti.factorial(numero);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    @Test (expected=IllegalArgumentException.class)
+    public void testFactorialFlaso() {
+        System.out.println("factorial");
+        int numero = 0;
+        int expResult = 0;
+        int result = EjercicioEntornosMulti.factorial(numero);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
 }
