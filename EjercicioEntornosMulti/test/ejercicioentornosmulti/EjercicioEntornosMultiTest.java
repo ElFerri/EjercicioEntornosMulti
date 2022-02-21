@@ -4,6 +4,8 @@
  */
 package ejercicioentornosmulti;
 
+import java.util.Scanner;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,25 +19,95 @@ import org.junit.Ignore;
  * @author fersan
  */
 public class EjercicioEntornosMultiTest {
+    static Scanner entrada=new Scanner(System.in);
+    
 
+    /**
+     *
+     */
     public EjercicioEntornosMultiTest() {
     }
 
+    /**
+     *
+     */
     @BeforeClass
     public static void setUpClass() {
     }
 
+    /**
+     *
+     */
     @AfterClass
     public static void tearDownClass() {
     }
 
+    /**
+     *
+     */
     @Before
     public void setUp() {
     }
 
+    /**
+     *
+     */
     @After
     public void tearDown() {
     }
+
+    public double dollar2euro(double euros) {
+        System.out.println("Introduce una cantidad de euros");
+
+        euros = entrada.nextDouble();
+
+        return euros;
+    }
+    	public static double cambiarMoneda(String moneda, double euros, double cambio) {
+
+		String dolares = null;
+
+		if (moneda==dolares)
+
+                cambio = euros*0.87;
+        
+
+		return cambio;
+
+	}
+        	public static void imprimir(double cambio) {
+
+		System.out.println("El resultado de la conversión es "+cambio);
+
+		return;
+
+	}
+                public double euro2dollar(double dolares) {
+        System.out.println("Introduce una cantidad de euros");
+
+        dolares = entrada.nextDouble();
+
+        return dolares;
+    }
+    	public static double cambiardolar(String moneda, double dolares, double cambio) {
+
+		String euros = null;
+
+		if (moneda==euros)
+
+                cambio = dolares*0.742;
+        
+
+		return cambio;
+
+	}
+        	public static void imprimircambio(double cambio) {
+
+		System.out.println("El resultado de la conversión es "+cambio);
+
+		return;
+
+	}
 
     /**
      * Test of multiplica method, of class EjercicioEntornosMulti.
@@ -67,7 +139,8 @@ public class EjercicioEntornosMultiTest {
 
     /**
      * Test of multiplica method, of class EjercicioEntornosMulti.
-     * Multiplicacion por 15000, el timeout te dira si es capaz de hacerlo en 1 ms.
+     * Multiplicacion por 15000, el timeout te dira si es capaz de hacerlo en 1
+     * ms.
      */
     @Test(timeout = 1)
     public void testMultiplicaTimeout() {
@@ -90,7 +163,11 @@ public class EjercicioEntornosMultiTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    @Test (expected=IllegalArgumentException.class)
+
+    /**
+     *
+     */
+    @Test(expected = IllegalArgumentException.class)
     public void testFactorialFlaso() {
         System.out.println("factorial");
         int numero = 0;
